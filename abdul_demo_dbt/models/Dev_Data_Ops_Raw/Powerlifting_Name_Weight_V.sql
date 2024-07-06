@@ -1,3 +1,3 @@
-select Name, BodyweightKg as BodyWeight_in_KG
+select Name, Sex, BodyweightKg
 from {{ source("data_ingestion","powerlifting") }}
-order by BodyWeight_in_KG
+order by BodyweightKg
