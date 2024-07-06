@@ -1,3 +1,3 @@
 select *
 
-from {{ref('Meets_Count_Player_ID6_Agr_V')}}
+from {{ref('meets_count_player_ID6_Agr_V')}}
