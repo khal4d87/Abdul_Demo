@@ -35,7 +35,7 @@ models:
     Dev_Data_Ops_Raw:
       +materialized: view
       +schema: Raw
-    Aggregation_Layer:
+    Dev_DataOps_Transformation:
       +materialized: view 
       +schema: Aggregation
     Dev_DataOps_Transformation:
