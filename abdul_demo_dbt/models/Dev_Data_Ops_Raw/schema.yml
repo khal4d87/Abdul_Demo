@@ -2,20 +2,22 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: Powerlifting_Name_Weight_V
+    description: "Name of the power lifter mentionedin the sports dataset"
     columns:
-      - name: id
+      - name: MeetID 
         description: "The primary key for this table"
         data_tests:
           - unique
           - not_null
-
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
+      - name: Name
+        description: 'name of the power lifter'
+      - name: BodyweightKg
+        description: 'this is the bodyweight of the powerlifter'
         data_tests:
-          - unique
-          - not_null
+          - not_null    
+  - name: my_test_model_meetid_Raw_V
+    description: "Name of the power lifter mentionedin the sports dataset"
+    columns:
+      - name: MeetID 
+        description: "The primary key for this table"
