@@ -3,7 +3,7 @@ version: 2
 
 models:
   - name: Powerlifting_Name_Weight_V
-    description: "Name of the power lifter mentionedin the sports dataset"
+    description: "Name of the power lifter mentioned in the sports dataset"
     columns:
       - name: MeetID 
         description: "The primary key for this table"
