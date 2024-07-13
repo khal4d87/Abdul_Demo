@@ -1,4 +1,4 @@
-SELECT MeetID, Date, FullCountryName
+SELECT *,
 Case
     when MeetCountry = 'UK' Then 'United_Kingdom'
     when MeetCountry = 'USA' Then 'United_States'
