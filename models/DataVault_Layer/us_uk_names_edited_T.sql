@@ -1,3 +1,3 @@
 select MeetID, Date, FullCountryName, MeetCountry
 
-from {{ref('us_uk_names_edited_V')}}
+from {{ref('US_UK_names_edited_V')}}
