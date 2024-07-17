@@ -1,14 +1,13 @@
 version: 2
 
 models:
-  - name: Meet_Change_Date_Raw_V
-    description: This table  Meet_Changes_Date_Raw_V for meets
+  - name: Powerlifting_Name_Weight_V
+    description: This table  Powerlifting_Name_Weight_V for meets
 
     columns:
       - name: meetid
         description: This is a unique identifier for a customer
         tests:
-          - unique
           - not_null
 
       - name: MeetTown
