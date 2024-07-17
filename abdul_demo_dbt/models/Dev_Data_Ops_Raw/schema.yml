@@ -1,23 +1,18 @@
-
 version: 2
 
 models:
-  - name: Powerlifting_Name_Weight_V
-    description: "Name of the power lifter mentioned in the sports dataset"
+  - name: Meet_Change_Date_Raw_V
+    description: This table  Meet_Changes_Date_Raw_V for meets
+
     columns:
-      - name: MeetID 
-        description: "The primary key for this table"
-        data_tests:
+      - name: meetid
+        description: This is a unique identifier for a customer
+        tests:
           - unique
           - not_null
-      - name: Name
-        description: 'name of the power lifter'
-      - name: BodyweightKg
-        description: 'this is the bodyweight of the powerlifter'
-        data_tests:
-          - not_null    
-  - name: my_test_model_meetid_Raw_V
-    description: "Name of the power lifter mentionedin the sports dataset"
-    columns:
-      - name: MeetID 
-        description: "The primary key for this table"
+
+      - name: MeetTown
+        description: This is meeting town.
+
+      - name: UK_date
+        description: This is for the UK date.
