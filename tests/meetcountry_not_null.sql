@@ -1,0 +1,1 @@
+select MeetCountry from {{ source('data_ingestion', 'meets') }} where MeetCountry is null

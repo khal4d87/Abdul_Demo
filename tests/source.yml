@@ -1,0 +1,14 @@
+#CONTROLLED BY DBT_CHANGED AS PER DBT UPDATES -CHANGED MANUALLY WHEN DBT CHANGES THE VERSION-
+version: 2
+#SOURCES FOR THE MODELS_ MULTIPLE SOURCES CAN BE ADDED IN THIS FILE
+sources:
+#MODEL REFERS TO THIS_SEE MODEL SQL FILES
+  - name: data_ingestion
+#DATABASE IN GCP
+    database: dazzling-trail-424718-b1  
+#REFERRING TO GCP
+    schema: Sports  
+#REFERRING TO GCP
+    tables:
+      - name: meets
+      - name: powerlifting
