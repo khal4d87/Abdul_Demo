@@ -1,1 +1,1 @@
-select Name from {{ source('data_ingestion', 'powerlifting') }} where Name is not null
+select Name from {{ source('data_ingestion', 'powerlifting') }} where Name is null
