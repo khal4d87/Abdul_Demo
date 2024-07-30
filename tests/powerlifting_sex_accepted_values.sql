@@ -1,0 +1,1 @@
+select Sex from {{ source('data_ingestion', 'powerlifting') }} where Sex NOT IN ('M', 'F')

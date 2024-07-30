@@ -1,1 +1,0 @@
-select Name from {{ source('data_ingestion', 'powerlifting') }} where Name is null
