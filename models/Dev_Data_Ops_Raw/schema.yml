@@ -2,16 +2,30 @@ version: 2
 
 models:
   - name: Powerlifting_Name_Weight_V
-    description: This table  Powerlifting_Name_Weight_V for meets
+    description: 'This table  Powerlifting_Name_Weight_V for meets'
 
     columns:
       - name: meetid
-        description: This is a unique identifier for a customer
+        description: 'This is a unique identifier for a customer'
         tests:
           - not_null
 
       - name: MeetTown
-        description: This is meeting town.
+        description: 'This is meeting town'
 
       - name: UK_date
-        description: This is for the UK date.
+        description: 'This is for the UK date'
+
+      - name: Name
+        description: 'This is for the Name column'
+        tests: 
+          - not_null
+
+      - name: Sex
+        description: 'The gender of the athlete M or F'
+        tests:
+          - accepted_values:
+              values: ['M', 'F']
+              
+          
+              
