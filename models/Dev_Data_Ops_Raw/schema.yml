@@ -26,6 +26,12 @@ models:
         tests:
           - accepted_values:
               values: ['M', 'F']
+
+      - name: Equipment
+        description: 'Type of Lift'
+        tests:
+          - accepted_values:
+              values: ['Raw']
               
           
               
